@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Passport | <%= title %></title>
+		<%- include('partials/head.ejs', {header: header}); %>
+	</head>
+
+	<body id="bg" >
+		
+		<%- include('partials/header.ejs'); %>
+
+		<div class="flashes  col-12 col-sm-8 col-lg-3">
+			<%- include('partials/flash-messages.ejs') %>
+		</div>
+
+		<div class=" font-small text-center text-white"><%- body%></div>
+		<%- include('partials/footer.ejs'); %>
+		<%- script %>
+
+	</body>
+</html>

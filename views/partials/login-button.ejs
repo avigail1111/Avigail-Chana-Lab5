@@ -1,0 +1,19 @@
+<!-- section: login-button.ejs -->
+<div class="d-flex  text-white align-items-end">
+	<% if (loggedIn) { %>
+	<p class="my-0 text-white">
+		Logged in as,
+		<a class=" text-white" href="<%=`/users/${currentUser.username}`%>">
+			<%= currentUser.name; %>
+		</a>
+		<a
+			class="py-2 ml-2 h3 mb-0 font-weight-lighter badge badge-pill badge-danger"
+			href="/auth/logout"
+			>Log out</a
+		>
+	</p>
+	<% } else { %>
+	<a class=" text-white" href="/auth/login">Log in</a>
+	<% } %>
+</div>
+<!-- /section: login-button.ejs -->

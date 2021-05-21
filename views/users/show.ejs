@@ -1,0 +1,54 @@
+<div class="Absolute-Center is-Responsive">
+	<div class="col-12">
+		<div
+			class="tab-pane fade show active"
+			id="basicInfo"
+			role="tabpanel"
+			aria-labelledby="basicInfo-tab"
+		>
+			<div class="row">
+				<div class="col-5">
+					<label style="font-weight: bold">Full Name</label>
+				</div>
+				<div class="col-6"><%= user.name %></div>
+			</div>
+			<hr />
+
+			<div class="row">
+				<div class="col-5">
+					<label style="font-weight: bold">Username</label>
+				</div>
+				<div class="col-6"><%= user.username %></div>
+			</div>
+			<hr />
+
+			<% if (admin) { %>
+			<div class="row">
+				<div class="col-5">
+					<label style="font-weight: bold">Password</label>
+				</div>
+				<div class="col-6"><%= user.password %></div>
+			</div>
+			<hr />
+
+			<div class="row">
+				<div class="col-5">
+					<label style="font-weight: bold">Admin</label>
+				</div>
+				<div class="col-6"><%= user.admin %></div>
+			</div>
+			<hr />
+
+			<div class="row">
+				<div class="col-5">
+					<label style="font-weight: bold">Delete</label>
+				</div>
+				<div class="col-6">
+					<em onclick="remove($(this).parent());" class="fa fa-user-minus"></em>
+				</div>
+			</div>
+			<hr />
+			<% } %>
+		</div>
+	</div>
+</div>
