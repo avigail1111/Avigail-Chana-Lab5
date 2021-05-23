@@ -13,10 +13,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-a{
-  
-}
+/*
 
 .Absolute-Center {
   margin: auto;
@@ -26,6 +23,7 @@ a{
   bottom: 0;
   right: 0;
 }
+
 
 @media (max-width: 400px) {
   .Absolute-Center {
@@ -57,7 +55,7 @@ img {
   max-width: 600px;
 }
 
-/* alert & fade animations */
+alert & fade animations 
 .flash {
   position: fixed !important;
   left: 30%;
@@ -105,7 +103,7 @@ img {
   margin-right: 7px;
   transform: rotateY(180deg) rotateZ(-90deg);
 }
-/* svg circle countdown timer around alert close button */
+ svg circle countdown timer around alert close button 
 .countdown-circle {
   stroke-dasharray: 113px;
   stroke-dashoffset: 0px;
@@ -124,3 +122,4 @@ img {
     stroke-dashoffset: 113px;
   }
 }
+*/

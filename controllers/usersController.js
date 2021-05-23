@@ -122,7 +122,7 @@ module.exports = {
     },
     delete: (req, res, next) => {
         let username = req.params.name
-        if (username === 'dzilbers') {
+        if (username === 'avigail') {
             req.flash("error", "Can not delete THE ADMIN!")
             res.locals.redirect = "/users"
             next()
