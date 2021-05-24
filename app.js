@@ -25,7 +25,7 @@ app.set("layout extractScripts", true)
 // middleware setup
 app.use(logger('dev'))
 app.use(express.static(path.join(__dirname, 'public')))
-app.use(favicon(path.join(__dirname, 'public', 'img', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'public', 'img', 'speech-bubble.ico')))
 app.use(expressLayouts)
 // @ts-ignore
 app.use(express.urlencoded({ extended: false }))
