@@ -1,6 +1,6 @@
-<script defer>
+<!--<script defer>
   async function remove($row) {
-      <% if (admin) { %>
+      <#% if (admin) { %>
       user = $($row).find('#username').text();
       if (confirm("Do you really want to delete user '" + user + "'?")) {
           try {
@@ -10,7 +10,7 @@
           }
           location = "/users";
       }
-      <% } %>
+      <#% } %>
   }
   async function buildRows() {
       let users = [];
@@ -25,10 +25,10 @@
           $row = template.clone();
           $row.find("#username").text(user.username);
           $row.find("#name").text(user.name);
-          <% if (admin) { %>
+          <#% if (admin) { %>
           $row.find("#password").text(user.password);
           $row.find("#admin").text(user.admin);
-          <% } %>
+          <#% } %>
           $row.appendTo($tbody);
       });
   }
@@ -36,14 +36,14 @@
          buildRows()
      })
 </script>
-<a href="users/add" class="mt-1 mb-3 btn btn btn-secondary"
-  >Create New User</a
->
-<div class="row justify-content-center">
-  <div class="col-auto">
-    <table class="table-active table-bordered .table-hover table-responsive">
+
+-->
+
+ 
+    <table>
       <thead class="thead-inverse">
         <tr>
+          <tbody id="tbody">
           <th id="username-header">User</th>
           <% if (admin) { %>
           <th id="password-header">Password</th>
@@ -51,15 +51,14 @@
           <% } %>
           <th id="name-header">Name</th>
           <% if (admin) { %>
-          <th id="remove-user-header" class="text-center">remove user</th>
+          <th id="remove-user-header" class="text-center">Remove user</th>
           <% } %>
         </tr>
       </thead>
-      <tbody id="tbody">
+      
         <script id="row-template" type="text/x-custom-template">
           <%- include('user') %>
         </script>
       </tbody>
     </table>
-  </div>
-</div>
+    <a href="users/add" class="mt-1 mb-3 btn btn btn-secondary">Add new user</a>
