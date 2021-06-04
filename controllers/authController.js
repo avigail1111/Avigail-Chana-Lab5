@@ -58,5 +58,5 @@ module.exports = {
         let redirectPath = res.locals.redirect
         if (redirectPath != undefined) res.redirect(redirectPath)
         else next()
-    }
+    },
 }

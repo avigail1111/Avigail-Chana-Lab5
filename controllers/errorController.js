@@ -17,6 +17,10 @@ exports.pageNotFoundError = (req, res) => {
 
 exports.internalServerError = (error, req, res) => {
     renderError(req, res, StatusCodes.INTERNAL_SERVER_ERROR,
+<<<<<<< HEAD
         `${StatusCodes.INTERNAL_SERVER_ERROR}, error app`,
+=======
+        `${StatusCodes.INTERNAL_SERVER_ERROR}, Sorry! Something went wrong with our application :(`,
+>>>>>>> fe4c75bbf0037e404c9da266e227796f6416e371
         error)
 }
